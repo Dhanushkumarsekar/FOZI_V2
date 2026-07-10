@@ -1,186 +1,475 @@
-🚀 FOZI – Smart E-Commerce Mobile App
+# 🌟 FOZI – AI-Powered Perfume E-Commerce Platform
 
-Fozi is a modern full-stack e-commerce mobile application built using Flutter + Node.js + MongoDB.
-It provides a seamless shopping experience for users and a powerful admin panel for managing products, orders, and analytics.
+<p align="center">
 
----
+![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb&logoColor=white)
+![Razorpay](https://img.shields.io/badge/Razorpay-Payment-0C2451?logo=razorpay&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Authentication-black?logo=jsonwebtokens)
+![License](https://img.shields.io/badge/License-MIT-success)
 
-📱 Features
+</p>
 
-👤 User Side
-
-- 🔐 User Authentication (Login / Register)
-- 🛍️ Browse Products
-- ❤️ Wishlist System
-- 🛒 Add to Cart
-- 💳 Razorpay Payment Integration
-- 📦 Order Placement & Tracking
-- ❌ Cancel Orders with Reason
-- ⭐ Product Ratings & Reviews
-- 👤 Profile Management
-- 📍 Address Management
+<h3 align="center">
+Modern AI-Powered Perfume Shopping Application Built with Flutter, Node.js & MongoDB
+</h3>
 
 ---
 
-🛠️ Admin Side
+# 🎥 Demo Video
 
-- 🔐 Secure Admin Login (JWT Auth)
-- ➕ Add Products with Image Upload
-- 📦 Manage Orders (Approve / Cancel)
-- 📊 Dashboard Analytics:
-  - Total Users
-  - Total Orders
-  - Total Revenue
-  - Sales Graph
-- 🗑️ Delete / ✏️ Update Products
-- 📉 Stock Management (In Stock / Out of Stock)
+### ▶ Watch FOZI in Action
+
+https://github.com/user-attachments/assets/050e0ce8-2cc3-4bec-a9d1-15f32884dd2d
 
 ---
 
-🧑‍💻 Tech Stack
+# 📱 Project Overview
 
-🎨 Frontend (Mobile)
+FOZI is a modern full-stack perfume shopping platform designed to deliver a seamless mobile shopping experience. Built using **Flutter**, **Node.js**, **Express.js**, and **MongoDB**, the application offers secure authentication, product management, shopping cart, wishlist, Razorpay payment integration, and order management.
 
-- Flutter (Dart)
+The project follows enterprise-level architecture with a scalable REST API backend and a responsive Flutter frontend.
+
+---
+
+# ✨ Features
+
+## 👤 User Authentication
+
+- Secure User Registration
+- Login Authentication
+- JWT Authentication
+- User Profile
+- Password Security
+- Logout
+
+---
+
+## 🛍 Product Management
+
+- Browse Products
+- Product Categories
+- Search Products
+- Product Details
+- Image Gallery
+- Featured Products
+
+---
+
+## ❤️ Wishlist
+
+- Add Products
+- Remove Products
+- Save Favorites
+- Persistent Wishlist
+
+---
+
+## 🛒 Shopping Cart
+
+- Add to Cart
+- Remove from Cart
+- Update Quantity
+- Order Summary
+- Checkout
+
+---
+
+## 💳 Secure Payments
+
+- Razorpay Integration
+- Online Payment
+- Payment Verification
+- Order Confirmation
+
+---
+
+## 📦 Order Management
+
+- Place Orders
+- Order History
+- Track Orders
+- Order Details
+
+---
+
+## 📱 Beautiful UI
+
+- Modern Flutter Design
+- Responsive Layout
+- Smooth Animations
+- Clean User Experience
+
+---
+
+# 🚀 Tech Stack
+
+## Frontend
+
+- Flutter
+- Dart
 - Material UI
-- HTTP API Integration
-- Image Picker
+- Provider
+- HTTP Package
 
-⚙️ Backend
+## Backend
 
 - Node.js
 - Express.js
-- MongoDB (Mongoose)
+- REST API
 - JWT Authentication
-- Multer (Image Upload)
-- Nodemailer (Email Service)
+
+## Database
+
+- MongoDB
+- Mongoose
+
+## Payment Gateway
+
+- Razorpay
+
+## Tools
+
+- VS Code
+- Git
+- GitHub
+- Postman
 
 ---
 
-📂 Project Structure
+# 🏗 System Architecture
 
-Fozi/
+```
+Flutter Application
+        │
+        ▼
+REST API (Express.js)
+        │
+        ▼
+Business Logic
+        │
+        ▼
+MongoDB Database
+        │
+        ▼
+Razorpay Payment Gateway
+```
+
+---
+
+# 📂 Folder Structure
+
+```
+FOZI_V2
 │
-├── fozi_app/           # Flutter App
-│   ├── lib/
-│   └── android/
-│
-├── fozi-backend/      # Node.js Backend
-│   ├── routes/
+├── android/
+├── ios/
+├── lib/
 │   ├── models/
+│   ├── providers/
+│   ├── screens/
+│   ├── services/
+│   ├── widgets/
+│   ├── utils/
+│   └── main.dart
+│
+├── assets/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
 │   ├── middleware/
-│   └── uploads/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+│
+├── screenshots/
+│
+├── pubspec.yaml
 │
 └── README.md
+```
 
 ---
 
-⚙️ Setup Instructions
+# 📸 Screenshots
 
-🔥 Backend Setup
+## Home Screen
 
-cd fozi-backend
-npm install
-
-Create ".env" file
-
-PORT=5000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=mysecret123
-
-EMAIL=your_email@gmail.com
-EMAIL_PASS=your_app_password
-
-Run Server
-
-npm start
+![Home](screenshots/home.png)
 
 ---
 
-📱 Frontend Setup
+## Product Details
 
-cd fozi_app
+![Product](screenshots/product-details.png)
+
+---
+
+## Shopping Cart
+
+![Cart](screenshots/cart.png)
+
+---
+
+## Wishlist
+
+![Wishlist](screenshots/wishlist.png)
+
+---
+
+## Checkout
+
+![Checkout](screenshots/checkout.png)
+
+---
+
+## User Profile
+
+![Profile](screenshots/profile.png)
+
+---
+
+# ⚙ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Dhanushkumarsekar/FOZI_V2.git
+```
+
+---
+
+## Install Flutter Dependencies
+
+```bash
 flutter pub get
+```
+
+---
+
+## Run Flutter Application
+
+```bash
 flutter run
+```
 
 ---
 
-🌐 API Base URL
+## Backend Setup
 
-Update in "api_service.dart":
-
-static const String baseUrl = "http://YOUR_IP:5000/api";
-
-Example:
-
-http://10.112.254.203:5000/api
+```bash
+cd backend
+npm install
+```
 
 ---
 
-🔐 Admin Credentials
+## Start Backend Server
 
-.
-.
-
----
-
-📸 Screens Included
-
-- Login Screen
-- Profile Page
-- Admin Dashboard
-- Add Product Screen
-- Orders & Wishlist UI
+```bash
+npm start
+```
 
 ---
 
-📊 Future Enhancements
+# 🔐 Environment Variables
 
-- 🔔 Push Notifications
-- 🤖 AI Product Recommendations
-- 📍 Live Order Tracking
-- 🌍 Multi-language Support
-- 🧠 Smart Search & Filters
+Create a `.env` file inside the backend directory.
 
----
+```env
+PORT=5000
 
-💰 Deployment
+MONGODB_URI=YOUR_MONGODB_CONNECTION
 
-Frontend:
+JWT_SECRET=YOUR_SECRET_KEY
 
-- Flutter APK / Play Store
+RAZORPAY_KEY_ID=YOUR_KEY
 
-Backend:
-
-- Railway / Render / VPS
+RAZORPAY_SECRET=YOUR_SECRET
+```
 
 ---
 
-🧪 Testing
+# 📡 REST API
 
-- API tested using Postman
-- Real device testing (Android)
-- Payment testing using Razorpay sandbox
+## Authentication
 
----
-
-👨‍💻 Developer
-
-Dhanushkumar Sekar
-📧 kdhanush484@gmail.com
-🔗 "LinkedIn" (https://www.linkedin.com/in/dhanush44/)
-💻 "GitHub" (https://github.com/Dhanushkumarsekar)
+```
+POST /register
+POST /login
+GET /profile
+```
 
 ---
 
-⭐
+## Products
+
+```
+GET /products
+GET /products/:id
+```
 
 ---
 
-📜 License
+## Wishlist
 
-This project is open-source and available under the MIT License.
+```
+GET /wishlist
+POST /wishlist
+DELETE /wishlist/:id
+```
 
 ---
 
-🔥 Fozi – Smart Shopping Made Simple
+## Cart
+
+```
+GET /cart
+POST /cart
+PUT /cart/:id
+DELETE /cart/:id
+```
+
+---
+
+## Orders
+
+```
+POST /orders
+GET /orders
+GET /orders/:id
+```
+
+---
+
+# 🔒 Security Features
+
+- JWT Authentication
+- Password Encryption
+- Protected Routes
+- Secure REST APIs
+- Input Validation
+- Error Handling
+
+---
+
+# 📈 Future Enhancements
+
+- 🤖 AI Perfume Recommendation
+- 💬 AI Chat Assistant
+- 🎙 Voice Search
+- 🌙 Dark Mode
+- 🌐 Multi-language Support
+- ⭐ Product Reviews
+- 🎁 Coupons & Offers
+- 📲 Push Notifications
+- 📊 Admin Dashboard
+- 📦 Inventory Management
+
+---
+
+# 📊 Project Highlights
+
+- Full Stack Development
+- Enterprise REST API
+- Mobile Application
+- MongoDB Integration
+- JWT Authentication
+- Razorpay Payment Gateway
+- Clean Architecture
+- Responsive Flutter UI
+- Scalable Backend
+
+---
+
+# 🧠 Learning Outcomes
+
+This project demonstrates practical experience in:
+
+- Flutter Mobile Development
+- Backend API Development
+- MongoDB Database Design
+- Authentication & Authorization
+- Payment Gateway Integration
+- Full Stack Application Development
+- Clean Code Practices
+- Git Version Control
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork this repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/NewFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature/NewFeature
+```
+
+5. Create a Pull Request
+
+---
+
+# 👨‍💻 Developer
+
+## Dhanushkumar Sekar
+
+**Computer Science Engineer | Full Stack Developer | AI Enthusiast | Cyber Security**
+
+📧 Email
+
+kdhanush484@gmail.com
+
+🔗 GitHub
+
+https://github.com/Dhanushkumarsekar
+
+🔗 LinkedIn
+
+https://www.linkedin.com/in/dhanush44/
+
+🌐 Portfolio
+
+https://quiet-empanada-f231a3.netlify.app/
+
+---
+
+# ⭐ Show Your Support
+
+If you found this project helpful,
+
+please consider giving it a ⭐ on GitHub.
+
+It motivates me to build more open-source projects.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<p align="center">
+
+### 🚀 Built with ❤️ using Flutter, Node.js, Express.js & MongoDB
+
+</p>
